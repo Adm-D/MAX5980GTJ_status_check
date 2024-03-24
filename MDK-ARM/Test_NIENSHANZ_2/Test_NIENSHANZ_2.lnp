@@ -1,0 +1,19 @@
+--cpu Cortex-M3
+"test_nienshanz_2\startup_stm32f103xb.o"
+"test_nienshanz_2\main.o"
+"test_nienshanz_2\stm32f1xx_it.o"
+"test_nienshanz_2\i2c.o"
+"test_nienshanz_2\uart.o"
+"test_nienshanz_2\stm32f1xx_ll_gpio.o"
+"test_nienshanz_2\stm32f1xx_ll_i2c.o"
+"test_nienshanz_2\stm32f1xx_ll_dma.o"
+"test_nienshanz_2\stm32f1xx_ll_rcc.o"
+"test_nienshanz_2\stm32f1xx_ll_utils.o"
+"test_nienshanz_2\stm32f1xx_ll_exti.o"
+"test_nienshanz_2\stm32f1xx_ll_pwr.o"
+"test_nienshanz_2\stm32f1xx_ll_usart.o"
+"test_nienshanz_2\system_stm32f1xx.o"
+--strict --scatter "Test_NIENSHANZ_2\Test_NIENSHANZ_2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Test_NIENSHANZ_2.map" -o Test_NIENSHANZ_2\Test_NIENSHANZ_2.axf
